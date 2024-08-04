@@ -106,7 +106,7 @@ try:
     prediction = model.predict_proba(input_data_scaled)[0, 1]
     
     st.subheader('Prediction Result')
-    st.write(f'Probability of Heart Attack: {prediction:.2f}%')
+    st.write(f'Probability of Heart Attack: {prediction * 100:.2f}%')
 except ValueError as e:
     st.error(f"Error scaling input data: {e}")
 
