@@ -126,14 +126,14 @@ st.sidebar.header('Explore Underlying Data')
 if st.sidebar.checkbox('Show Data Visualization'):
     heart_data = pd.read_csv('heart_attack.csv')
     
-    st.subheader('Dataset Overview')
-    st.write(heart_data.head())
+    #st.subheader('Dataset Overview')
+    #st.write(heart_data.head())
     
-    st.subheader('Correlation Heatmap')
-    plt.figure(figsize=(10, 6))
-    sns.heatmap(heart_data.corr(), annot=True, cmap='coolwarm', vmin=-1, vmax=1)
-    fig = plt.gcf() 
-    st.pyplot(fig)
+    #st.subheader('Correlation Heatmap')
+    #plt.figure(figsize=(10, 6))
+    #sns.heatmap(heart_data.corr(), annot=True, cmap='coolwarm', vmin=-1, vmax=1)
+    #fig = plt.gcf() 
+    #st.pyplot(fig)
 
     # st.subheader('BMI vs Age')
     # plt.figure(figsize=(10, 6))
